@@ -1,0 +1,80 @@
+.card-body{
+    min-height: 270px;
+}
+
+
+
+/* district pages */
+.disthead{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(245, 250, 244);
+}
+.disthead1{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(21, 49, 173);
+}
+.disthead2{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(93, 204, 42);
+    font-weight: 600;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+
+
+/* Help  */
+
+/* body{
+    background: #eee;
+    padding-top: 20px;
+    font-family: monospace;
+  } */
+  .header{
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 0px;
+    background: rgb(0, 77, 128);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .faq-item{
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .faq-body{
+    display: none;
+    margin-top: 30px;
+  }
+  .faq-wrapper{
+    width: 75%;
+    margin: 0 auto;
+  }
+  .faq-inner{
+    padding: 30px;
+    background: aliceblue;
+  }
+  .faq-plus{
+    float: right;
+    font-size: 1.4em;
+    line-height: 1em;
+    cursor: pointer;
+  }
+  hr{
+    background-color: #9b9b9b;
+  }
