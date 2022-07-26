@@ -1,0 +1,115 @@
+<div class="main">
+    <div class="container">
+        <div class="row">
+
+            <!-- IMAGE starts here -->
+            <div class="col">
+                <img [src]="img_url" alt="Image here">
+            </div>
+            <!-- IMAGE ends here -->
+
+            <!-- FORM starts here -->
+            <div class="col">
+                <form action="" method="post">
+                    <h2>GUIDE REGISTRATION</h2>
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="first_name" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="address1" placeholder="Address Line 1">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="address2" placeholder="Address line 2">
+                        </div>
+                        <div class="col-md-6">
+                            <select id="district" class="form-select">
+                                <option>District</option>
+                                <option value="Kasaragod">Kasaragod</option>
+                                <option value="Kannur">Kannur</option>
+                                <option value="Wayanad">Wayanad</option>
+                                <option value="Kozhikode">Kozhikode</option>
+                                <option value="Malappuram">Malappuram</option>
+                                <option value="Palakkad">Palakkad</option>
+                                <option value="Thrissur">Thrissur</option>
+                                <option value="Ernakulam">Ernakulam</option>
+                                <option value="Idukki">Idukki</option>
+                                <option value="Kottayam">Kottayam</option>
+                                <option value="Alappuzha">Alappuzha</option>
+                                <option value="Pathanamthitta">Pathanamthitta</option>
+                                <option value="Kollam">Kollam</option>
+                                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="state" value="Kerala">
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="zip" placeholder="Zip">
+                        </div>
+                        <fieldset class="row mb-3" style="margin-top: 15px;">
+                            <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Male
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Female
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Transgender">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Transgender
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="col-12">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" name="dob">
+                        </div>
+                        <div class="col-12">
+                            <select id="district" class="form-select">
+                                <option value="">ID Proof</option>
+                                <option value="aadhaar">Aadhaar</option>
+                                <option value="driving_licence">Driving licence</option>
+                                <option value="voter_id">Voter ID</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="scanned_proof"> Select a scanned copy of ID proof to upload :</label>
+                            <input type="file" class="form-control" name="scanned_proof" value="scanned_proof" id="scanned_proof">
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" style="width: 100px;" class="btn btn-primary">SUBMIT</button>
+                        </div>
+                      </form>
+                </form>
+            </div>
+            <!-- FORM ends here -->
+        
+        </div>
+    </div>
+</div>
+
+
+

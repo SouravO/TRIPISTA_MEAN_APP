@@ -25,7 +25,11 @@ import { WayanadComponent } from './wayanad/wayanad.component';
 import { KannurComponent } from './kannur/kannur.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+<<<<<<< Updated upstream
 import { FooterComponent } from './footer/footer.component';
+=======
+import { GuideRegComponent } from './guide-reg/guide-reg.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -52,7 +56,11 @@ import { FooterComponent } from './footer/footer.component';
     KannurComponent,
     HotelsComponent,
     FeedbackComponent,
+<<<<<<< Updated upstream
     FooterComponent
+=======
+    GuideRegComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,

@@ -11,5 +11,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  img_url = "src/assets/public/img/gallery/maldives.jpg"
+  img_url = "./assets/public/img/gallery/maldives.jpg"
 }

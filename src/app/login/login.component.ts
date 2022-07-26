@@ -12,4 +12,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  login_video = "./assets/public/img/illustrations/man-holding-glass-of-juice-and-woman-relaxing-on-bench-3573981-3056980.mp4"
+
 }

@@ -12,4 +12,6 @@ export class DistrictsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alappuzha_img = "./assets/public/img/gallery/imgtest123.jpg"
+
 }

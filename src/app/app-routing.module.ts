@@ -4,6 +4,7 @@ import { AlappuzhaComponent } from './alappuzha/alappuzha.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { ErnakulamComponent } from './ernakulam/ernakulam.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { GuideRegComponent } from './guide-reg/guide-reg.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { HotelsComponent } from './hotels/hotels.component';
@@ -29,6 +30,7 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'signup',component:SignupComponent},
 {path:'hotels',component:HotelsComponent},
 {path:'feedback',component:FeedbackComponent},
+{path:'guide',component:GuideRegComponent},
 {path:'',children:[
   {path:'districts/alappuzha',component:AlappuzhaComponent},
   {path:'districts/ernakulam',component:ErnakulamComponent},
