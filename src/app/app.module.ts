@@ -25,6 +25,7 @@ import { WayanadComponent } from './wayanad/wayanad.component';
 import { KannurComponent } from './kannur/kannur.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
     WayanadComponent,
     KannurComponent,
     HotelsComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

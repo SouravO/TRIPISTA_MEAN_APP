@@ -11,5 +11,4 @@ export class AlappuzhaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

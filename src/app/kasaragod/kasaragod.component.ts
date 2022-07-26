@@ -11,5 +11,4 @@ export class KasaragodComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

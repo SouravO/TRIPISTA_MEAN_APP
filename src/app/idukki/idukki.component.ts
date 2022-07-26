@@ -11,5 +11,4 @@ export class IdukkiComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

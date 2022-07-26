@@ -11,5 +11,4 @@ export class KannurComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

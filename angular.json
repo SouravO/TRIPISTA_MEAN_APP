@@ -31,7 +31,7 @@
               "src/theme.css"
             ],
             "scripts": [
-              "src/assets/public/js/custom.js"
+              "src/assets/js/custom.js"
             ]
           },
           "configurations": {
