@@ -12,7 +12,6 @@ export class GuideRegComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // img_url = "./assets/public/img/gallery/tourist_guide.jpg"
-  // signup_img = "./assets/public/img/illustrations/traveling-and-vacation-3237299-2700397.webp"
+  signup_img = "./assets/img/illustrations/tour-guide-pana.png"
 
 }
