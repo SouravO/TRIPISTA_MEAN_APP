@@ -12,6 +12,4 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  signup_img = "./assets/public/img/illustrations/traveling-and-vacation-3237299-2700397.webp"
-
 }
