@@ -12,4 +12,6 @@ export class FeedbackComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  signup_img = "assets/img/gallery/Feedback.webp"
+
 }

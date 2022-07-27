@@ -1,30 +1,59 @@
-<section class="pt-8">
-
-    <div class="container">
-        <div class=" flex-center mb-5">
-            <div class="col-lg text-center">
-                <h1 class="fw-bold fs-md-3 fs-lg-4 fs-xl-5">Feedback</h1>
-                <hr class="mx-auto text-primary my-4" style="height:3px; width:70px;" />
-            </div>
-            <div class="container pt-3 "style=" border: 2px solid #3984F3 ; border-radius: 25px; width:500px;">
-                <div class="row">
-                    <!-- <center> -->
-
-                        <h3 ></h3>
-                    <!-- </center> -->
-                    <div class="col-lg-4 ">
-                        <form class="">
-                            <img id="image" src="http://via.placeholder.com/150x150" style="border-radius:50%"/>
-                            <input type="file" id="myfile" style="display: none;"/>
-                         </form>
-                    </div>
-                    <div class="col-lg-8 col-12">
-                        <div class=" col-lg card-body d-flex flex-center flex-column">
-                            <input type="text" name="text" class="input" placeholder="Your Name..."><br>
-                            <textarea type="textarea" name="text" class="input1" placeholder="Review..."></textarea>
-                            <button class="btn mt-4 me-8">Submit</button>
+<!-- <app-header></app-header> -->
+    <!-- ===============================================-->
+    <!-- Login Form-->
+    <!-- ===============================================-->
+    <section class="vh-100" style="background-color: rgb(238, 238, 238);">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+              <div class="card text-black" style="border-radius: 25px;">
+                <div class="card-body p-md-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+      
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Feedback</p>
+      
+                      <form name="RegForm" class="mx-1 mx-md-4" onsubmit="return formValues()" method="post">
+  
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" id="form3Example3c" class="form-control" style="color: black;" name="Name" placeholder="Your Name"/>
+                            <!-- <label class="form-label" for="form3Example3c">Your Email</label> -->
+                          </div>
                         </div>
-
+      
+                        <div class="d-flex flex-row align-items-center mb-4">
+                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                          <div class="form-outline flex-fill mb-0">
+                            <textarea type="text" id="form3Example4c" class="form-control" style="color: black;" name="Password" placeholder="Password"></textarea>
+                            <!-- <label class="form-label" for="form3Example4c">Password</label> -->
+                          </div>
+                        </div>
+                        <div style="padding-left: 1rem;">
+                            <input type="file" id="img" name="img" accept="image/*" style="color: #ffffff ;">
+                        </div>
+      
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button type="submit" name="Submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+      
+                      </form>
+      
                     </div>
+                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                      <img src="/assets/img/gallery/Feedback.webp"
+                        class="img-fluid" alt="Sample video" autoplay muted loop>
+                      
+      
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+        </div>
+        
+      </section>
+      
