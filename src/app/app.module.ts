@@ -28,6 +28,7 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
 import { GuideRegComponent } from './guide-reg/guide-reg.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { GuideRegComponent } from './guide-reg/guide-reg.component';
     HotelsComponent,
     FeedbackComponent,
     FooterComponent,
-    GuideRegComponent
+    GuideRegComponent,
+    UserprofileComponent
   ],
   imports: [
     BrowserModule,
