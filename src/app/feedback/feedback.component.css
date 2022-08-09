@@ -4,3 +4,6 @@ textarea{
 input#img{
   padding: 0.25rem;
 }
+input[type='file']{  
+  visibility: hidden;  
+}  

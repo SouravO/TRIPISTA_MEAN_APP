@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

@@ -37,10 +37,10 @@
 
 
                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Login</p>
-                    <form ngNativeValidate #loginform = "ngForm" (ngSubmit) = "submit(loginform)" >
+                    <form ngNativeValidate #loginform = "ngForm" > 
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input #ename = "ngModel" required type = "email" class = "form-control" id = "exampleInputEmail1" placeholder = "Enter email" style = "color: #000;" ngModel>
+                        <input #ename = "ngModel" required type = "email" class = "form-control" id = "exampleInputEmail1" placeholder = "Enter email" style = "color: #000;" ngModel >
                         <div *ngIf = "ename.touched && ename.invalid" class="alert-danger">
                           Email is required
                         </div>
@@ -48,7 +48,7 @@
 
                       <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input #pass = "ngModel" minlength="6" required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="color: #000;" ngModel>
+                        <input #pass = "ngModel" minlength="6" required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="color: #000;" ngModel >
                         <div *ngIf = "pass?.errors?.['minlength']">
                           Enter strong password
                         </div>

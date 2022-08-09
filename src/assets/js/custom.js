@@ -79,6 +79,6 @@ if (password != confirmpassword) {
     return true;
 }
 
-$('#image').click(function () {
-    $('#myfile').click()
-})
+// $('#image').click(function () {
+//     $('#myfile').click()
+// })

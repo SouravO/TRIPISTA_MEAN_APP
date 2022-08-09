@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthadminGuard } from './authadmin.guard';
+import { AddhotelComponent } from './addhotel/addhotel.component';
+import { AdminComponent } from './admin/admin.component';
 import { AlappuzhaComponent } from './alappuzha/alappuzha.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { ErnakulamComponent } from './ernakulam/ernakulam.component';
@@ -21,10 +24,12 @@ import { PathanamthittaComponent } from './pathanamthitta/pathanamthitta.compone
 import { SignupComponent } from './signup/signup.component';
 import { ThrissurComponent } from './thrissur/thrissur.component';
 import { TrivandrumComponent } from './trivandrum/trivandrum.component';
+import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { WayanadComponent } from './wayanad/wayanad.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
+{path:'admin',component:AdminComponent},
 {path:'districts',component:DistrictsComponent},
 {path:'login',component:LoginComponent},
 {path:'help',component:HelpComponent},
@@ -33,6 +38,8 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'feedback',component:FeedbackComponent},
 {path:'guide',component:GuideRegComponent},
 {path:'userprofile',component:UserprofileComponent},
+{path:'addhotel',canActivate: [AuthadminGuard],component:AddhotelComponent},
+{path:'updatehotel/:id',component:UpdatehotelComponent},
 {path:'',children:[
   {path:'districts/alappuzha',component:AlappuzhaComponent},
   {path:'districts/ernakulam',component:ErnakulamComponent},
@@ -59,26 +66,6 @@ const routes: Routes = [{path:'',component:HomeComponent},
 export class AppRoutingModule {}
 
 
-
-
-
-// ,
-// children:[
-//   {path:'alappuzha',component:AlappuzhaComponent},
-//   {path:'ernakulam',component:ErnakulamComponent},
-//   {path:'idukki',component:IdukkiComponent},
-//   {path:'kannur',component:KannurComponent},
-//   {path:'kasaragod',component:KasaragodComponent},
-//   {path:'kollam',component:KollamComponent},
-//   {path:'kottayam',component:KottayamComponent},
-//   {path:'kozhikode',component:KozhikodeComponent},
-//   {path:'malappuram',component:MalappuramComponent},
-//   {path:'palakkad',component:PalakkadComponent},
-//   {path:'pathanamthitta',component:PathanamthittaComponent},
-//   {path:'trivandrum',component:TrivandrumComponent},
-//   {path:'thrissur',component:ThrissurComponent},
-//   {path:'wayanad',component:WayanadComponent}
-// ]
 
 
 

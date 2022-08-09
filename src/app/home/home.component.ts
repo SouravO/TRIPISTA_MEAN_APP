@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
+import { FeedbackService } from '../feedback.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  feedbacks: any;
 
-  constructor() { }
+  constructor( private feedbackservice:FeedbackService 
+    ,private routes:Router
+    ) { }
 
   ngOnInit(): void {
+    this.loadFeedback();
+
+    
+
   }
+  
+  loadFeedback(){
+    this.feedbackservice.listFeedback().subscribe((data:any)=>{
+      // console.log(data)
+      this.feedbacks = data;
+    })
+  }
+  
   img_url = "./assets/public/img/gallery/maldives.jpg"
 }
