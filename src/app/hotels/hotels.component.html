@@ -1,0 +1,27 @@
+<br>
+<section class="vh-100" style="background-color: rgb(255, 255, 255);">
+    <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-12 col-xl-11">
+                <!-- <div class="card text-black" style="border-radius: 25px;"> -->
+              <div class='hdht card-header text-center'>Hotels</div>
+<div *ngFor="let hotel of hotels" class="wrapper">
+    <h1>{{hotel.hotelName}}</h1>
+    <!-- <div class="image i1"></div> -->
+    <div><img [src] = 'hotel.hotelImageUrl' class="image"></div>
+    <div class="details"><h1><em>{{hotel.hotelStarrating}} 
+    </em><span class="fa fa-star checked"></span></h1>
+    <h2>{{hotel.hotelAddress}}</h2>
+    <p>{{hotel.hotelWebsite}}</p></div>
+    <h1>{{hotel.hotelPrice}}</h1>
+
+    <a href="updatehotel/{{hotel._id}}" *ngIf="_auth.adminloggedIn()" class="btn btn-success btn-lg mt-3 center">Edit</a>
+    <button *ngIf="_auth.adminloggedIn()" (click)="delHotel(hotel)"  class="btn btn-danger btn-lg mt-3 center">Delete</button>
+  </div>
+  
+
+</div>
+</div>
+</div>
+</section>
+

@@ -1,0 +1,29 @@
+/* district pages */
+.disthead{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(245, 250, 244);
+}
+.disthead1{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(21, 49, 173);
+}
+.disthead2{
+    margin-top: 3%;
+    margin-left: 50%;
+    color: rgb(93, 204, 42);
+    font-weight: 600;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
