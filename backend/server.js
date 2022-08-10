@@ -8,9 +8,13 @@ cors = require('cors');
 bodyParser = require('body-parser');
 dbConfig = require('./db/database');
 
+const db = require("./app/models");
+const Role = db.role;
+
 mongoose.Promise = global.Promise;
 mongoose.connect(dbConfig.db, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 }).then(() => {
         console.log('Database connected')
     },
@@ -27,7 +31,28 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors());
 
+// user login
 
+// routes
+require("./app/routes/auth.routes")(app);
+require("./app/routes/user.routes")(app);
+
+function initial() {
+  Role.estimatedDocumentCount((err, count) => {
+    if (!err && count === 0) {
+      new Role({
+        name: "user"
+      }).save(err => {
+        if (err) {
+          console.log("error", err);
+        }
+
+        console.log("added 'user' to roles collection");
+      });
+
+    }
+  });
+}
 
 // admin login
 username="admin"
@@ -40,11 +65,11 @@ function verifyToken(req, res, next) {
     }
     let token = req.headers.authorization.split(' ')[1]
     if(token === 'null') {
-      return res.status(401).send('Unauthorized request')    
+      return res.status(401).send('Unauthorized request')
     }
     let payload = jwt.verify(token, 'secretKey')
     if(!payload) {
-      return res.status(401).send('Unauthorized request')    
+      return res.status(401).send('Unauthorized request')
     }
     req.userId = payload.subject
     next()
@@ -66,7 +91,7 @@ app.post('/admin',(req,res)=> {
         let token = jwt.sign(payload, 'secretKey')
         res.status(200).send({token})
     }
-    
+
 })
 
 // admin login ends

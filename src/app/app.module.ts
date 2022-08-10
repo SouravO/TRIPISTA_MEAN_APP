@@ -3,13 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DistrictsComponent } from './districts/districts.component';
 import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
-import { SignupComponent } from './signup/signup.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { AlappuzhaComponent } from './alappuzha/alappuzha.component';
 import { ErnakulamComponent } from './ernakulam/ernakulam.component';
@@ -29,7 +32,6 @@ import { HotelsComponent } from './hotels/hotels.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
 import { GuideRegComponent } from './guide-reg/guide-reg.component';
-import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AddhotelComponent } from './addhotel/addhotel.component';
 import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
 import { AdminComponent } from './admin/admin.component';
@@ -38,6 +40,7 @@ import { AuthadminGuard } from './authadmin.guard';
 import { HotelsService } from './hotels.service';
 import { FeedbackService } from './feedback.service';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { TokenInterceptorService } from './token-interceptor.service';
     DistrictsComponent,
     LoginComponent,
     HelpComponent,
-    SignupComponent,
+    RegisterComponent,
+    ProfileComponent,
     HomeComponent,
     AlappuzhaComponent,
     ErnakulamComponent,
@@ -66,7 +70,6 @@ import { TokenInterceptorService } from './token-interceptor.service';
     FeedbackComponent,
     FooterComponent,
     GuideRegComponent,
-    UserprofileComponent,
     AddhotelComponent,
     UpdatehotelComponent,
     AdminComponent,
@@ -76,9 +79,10 @@ import { TokenInterceptorService } from './token-interceptor.service';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [HotelsService,AuthadminService,AuthadminGuard,FeedbackService,
+  providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,
   {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,

@@ -21,11 +21,11 @@ import { LoginComponent } from './login/login.component';
 import { MalappuramComponent } from './malappuram/malappuram.component';
 import { PalakkadComponent } from './palakkad/palakkad.component';
 import { PathanamthittaComponent } from './pathanamthitta/pathanamthitta.component';
-import { SignupComponent } from './signup/signup.component';
+import { RegisterComponent } from './register/register.component';
 import { ThrissurComponent } from './thrissur/thrissur.component';
 import { TrivandrumComponent } from './trivandrum/trivandrum.component';
 import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
-import { UserprofileComponent } from './userprofile/userprofile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { WayanadComponent } from './wayanad/wayanad.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
@@ -33,11 +33,12 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'districts',component:DistrictsComponent},
 {path:'login',component:LoginComponent},
 {path:'help',component:HelpComponent},
-{path:'signup',component:SignupComponent},
+{path:'register',component:RegisterComponent},
 {path:'hotels',component:HotelsComponent},
 {path:'feedback',component:FeedbackComponent},
 {path:'guide',component:GuideRegComponent},
-{path:'userprofile',component:UserprofileComponent},
+{ path: 'profile', component: ProfileComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 {path:'addhotel',canActivate: [AuthadminGuard],component:AddhotelComponent},
 {path:'updatehotel/:id',component:UpdatehotelComponent},
 {path:'',children:[
@@ -64,6 +65,7 @@ const routes: Routes = [{path:'',component:HomeComponent},
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+
 
 
 

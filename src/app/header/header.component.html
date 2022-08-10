@@ -21,18 +21,36 @@
           <li class="nav-item"><a class="nav-link text-600" routerLink="guide">Guide</a></li>
           <li class="nav-item"><a class="nav-link text-600" routerLink="feedback">Feedback</a></li>
           <li class="nav-item"><a class="nav-link text-600" routerLink="help">Help</a></li>
-          <li class="nav-item"><a class="nav-link text-600" routerLink="userprofile">User Profile</a></li>
+          <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="userprofile">User Profile</a></li> -->
           <li class="nav-item"><a class="nav-link text-600" routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
 
         </ul>
-        <form class="ps-lg-5">
+        <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+          <li class="nav-item">
+            <a href="/profile" class="nav-link" routerLink="profile"><img src="/assets/img/icons/profile.png" style="height: 25px;"></a>
+          </li>
+          <li class="nav-item">
+            <a href class="btn btn-lg btn-primary hover-top" (click)="logout()" style="background-color: rgba(255, 0, 0, 0.793);">Log Out</a>
+          </li>
+        </ul>
+       <form class="ps-lg-5" *ngIf="!isLoggedIn">
+         <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
+       </form>
+
+        <!-- <form class="ps-lg-5">
           <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
-        </form>
+        </form> -->
         <form class="ps-lg-5">
           <a class="btn btn-lg btn-danger hover-top" *ngIf="_auth.adminloggedIn()" (click)="logoutUser()"  role="button">Admin Log Out</a>
         </form>
+
+
+
       </div>
     </div>
 </nav>
-  
+<!-- <div class="container">
+  <router-outlet></router-outlet>
+</div> -->
+
 
