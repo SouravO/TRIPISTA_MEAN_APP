@@ -41,6 +41,7 @@ import { HotelsService } from './hotels.service';
 import { FeedbackService } from './feedback.service';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AddhotelComponent,
     UpdatehotelComponent,
     AdminComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

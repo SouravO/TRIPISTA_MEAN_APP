@@ -31,7 +31,18 @@ export class HotelsComponent implements OnInit {
       console.log(data);
       this.hotels = this.hotels.filter((u:any)=>u!==datas)
     })
-
-
   }
+
+  // search
+
+  searchText: string = "";
+
+  onSearchTextEntered(searchValue: string){
+    this.searchText = searchValue;
+    // console.log(this.searchText);
+  }
+
+
+
+
 }
