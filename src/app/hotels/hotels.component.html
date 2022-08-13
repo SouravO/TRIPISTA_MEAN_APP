@@ -22,11 +22,13 @@
     <a href="updatehotel/{{hotel._id}}" *ngIf="_auth.adminloggedIn()" class="btn btn-success btn-lg mt-3 center">Edit</a>
     <button *ngIf="_auth.adminloggedIn()" (click)="delHotel(hotel)"  class="btn btn-danger btn-lg mt-3 center">Delete</button>
   </div>
-  
+
 
 </div>
 </div>
 </div>
 </div>
 </section>
+
+<app-footer></app-footer>
 

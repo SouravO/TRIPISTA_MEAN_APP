@@ -9,12 +9,12 @@
             <div class="card-body p-md-0">
                 <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-    
+
                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Guide Registration</p>
-    
+
                     <form [formGroup]="addGuide" novalidate style="border-color: black;" class="mx-1 mx-md-4 row g-3" onsubmit="return formValues()" method="post">
 
-    
+
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-6">
@@ -24,7 +24,7 @@
                         <input type="text" formControlName="last_name" id="last_name" class="form-control" style= "color: black" name="Name" placeholder="Last Name"/>
                         </div>
                     </div>
-    
+
                     <!-- <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
@@ -38,7 +38,7 @@
                             <input type="text" id="address2" placeholder="Address Line 2" class="form-control" style="color: black;" name="Address2" />
                         </div>
                     </div> -->
-    
+
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-5">
@@ -67,7 +67,7 @@
                         <input type="text" class="form-control" style="color: black;" name="zip" id="zip" placeholder="Zip"/>
                         </div> -->
                     </div>
-    
+
                     <div class="d-flex flex-row align-items-center mb-4 push-up" style="margin: 0px;">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-4">
@@ -150,17 +150,17 @@
                             <input type="file" formControlName="biodata" id="biodata" class="form-control" style="color: black;" name="biodata" />
                         </div>
                     </div>
-    
+
                     <div class="form-check d-flex justify-content-center mb-5 push-up">
                         <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" /><label class="form-check-label" for="form2Example3">I agree all statements in <a href="#!">Terms of service</a></label>
                     </div>
-    
+
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4  push-up">
                         <button type="submit" (click)="onSubmit()" name="Submit" class="btn btn-primary btn-lg">Register</button>
                     </div>
-    
+
                     </form>
-    
+
                 </div>
 
                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
@@ -174,6 +174,8 @@
         </div>
         </div>
     </div>
-    
+
     </section>
+
+    <app-footer></app-footer>
 

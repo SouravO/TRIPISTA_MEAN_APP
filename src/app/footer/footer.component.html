@@ -1,21 +1,24 @@
 <!-- ============================================-->
         <!-- <section> begin ============================-->
             <section class="py-6">
-  
+
                 <div class="container">
                   <div class="row flex-center">
                     <div class="col-auto mb-4">
                       <ul class="list-unstyled list-inline mb-0">
                         <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Home</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Video</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Destinations</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Booking</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Contact</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Pricing</a></li>
-                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Privacy Policy</a></li>
+                        <!-- <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Video</a></li> -->
+                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" routerLink="/districts">Destinations</a></li>
+                        <li class="list-inline-item me3 me-sm-4"><a type="button" class="text-dark text-decoration-none" (click)="copenModal()" >Careers</a></li>
+                        <!-- <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" href="#!">Guide</a></li> -->
+                        <li class="list-inline-item me3 me-sm-4"><a class="text-dark text-decoration-none" (click)="openModal()" href="#!">Contact</a></li>
+                        <li class="list-inline-item me3 me-sm-4"><a type="button" class="text-dark text-decoration-none" (click)="popenModal()">Privacy Policy</a></li>
+
                       </ul>
                     </div>
                   </div>
+
+
                   <div class="row flex-center">
                     <!-- <div class="col-auto mb-4">
                       <p class="mb-0 fs--1 text-dark">&copy; This template is made with&nbsp;
@@ -49,7 +52,9 @@
                   </div>
                 </div>
                 <!-- end of .container-->
-        
+
               </section>
               <!-- <section> close ============================-->
               <!-- ============================================-->
+
+

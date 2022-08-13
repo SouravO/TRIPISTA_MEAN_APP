@@ -14,13 +14,17 @@
     <li><a routerLink="feedback">Feedback</a></li>
     <li><a routerLink="help">Help</a></li>
     <li><a routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
-    
-    
+
+
       <ul class="" *ngIf="isLoggedIn">
-          <li class="">
-            <a href="/profile" routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
-          </li>
-        </ul>
+        <li class="nav-item">
+          <a href="/feedback" class="nav-link text-600" routerLink="feedback">Feedback</a>
+        </li>
+        <li class="">
+          <a href="/profile" routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
+        </li>
+
+      </ul>
         <ul class="" *ngIf="isLoggedIn">
           <form class="links2">
             <a class="btn btn-lg btn-danger hover-top" (click)="logout()" role="button">Log Out</a>
@@ -38,7 +42,7 @@
           <a class="btn btn-lg btn-danger hover-top" *ngIf="_auth.adminloggedIn()" (click)="logoutUser()"  role="button">Admin Log Out</a>
         </form>
       </ul>
-  
+
 
   </ul>
 

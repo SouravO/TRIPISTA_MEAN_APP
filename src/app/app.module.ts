@@ -45,6 +45,10 @@ import { TokenInterceptorService } from './token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CareersComponent } from './careers/careers.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 
@@ -81,6 +85,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     UpdatehotelComponent,
     AdminComponent,
     SearchComponent,
+    CareersComponent,
+    ModalComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
@@ -90,6 +97,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserAnimationsModule,
     HttpClientModule,
     SlickCarouselModule,
+    NgbModule
   ],
   providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,GuidesService,
   {
