@@ -43,7 +43,7 @@ export class FeedbackComponent implements OnInit
   onSubmit(){
     console.log(this.addFeedback.value);
     this.feedbackservice.addFeedback(this.addFeedback.value).subscribe((data:any)=>{
-      console.log(data);
+      // console.log(data);
       this.routes.navigate(['']);
     })
   }

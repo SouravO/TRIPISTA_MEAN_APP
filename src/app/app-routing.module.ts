@@ -27,6 +27,7 @@ import { TrivandrumComponent } from './trivandrum/trivandrum.component';
 import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WayanadComponent } from './wayanad/wayanad.component';
+import { GuideDetailsComponent } from './guide-details/guide-details.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
 {path:'admin',component:AdminComponent},
@@ -37,6 +38,7 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'hotels',component:HotelsComponent},
 {path:'feedback',component:FeedbackComponent},
 {path:'guide',component:GuideRegComponent},
+{path:'guides', component:GuideDetailsComponent},
 { path: 'profile', component: ProfileComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 {path:'addhotel',canActivate: [AuthadminGuard],component:AddhotelComponent},

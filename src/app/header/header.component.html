@@ -1,56 +1,54 @@
-<!-- <div>
-  <a routerLink="">Home</a>
-  <a routerLink="districts">Districts</a>
-  <a routerLink="login">Login</a>
-  <a routerLink="help">Help</a>
-  <a routerLink="signup">Signup</a>
- </div> -->
 
 
 
-<nav class="navbar navbar-expand-lg fixed-top py-3 backdrop" data-navbar-on-scroll="data-navbar-on-scroll">
-     <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" routerLink=""> <img routerLink="" class="d-inline-block align-top img-fluid" src="/assets/img/gallery/logi-icon-test.png" alt="" width="100" /><span class="text-primary fs-4 ps-2">Tripista</span></a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" routerLink="">Home</a></li>
-          <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="admin">Admin </a></li> -->
-          <li class="nav-item"><a class="nav-link text-600" routerLink="districts">Districts </a></li>
-          <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="login">Login</a></li> -->
-          <li class="nav-item"><a class="nav-link text-600" routerLink="hotels">Hotels</a></li>
-          <li class="nav-item"><a class="nav-link text-600" routerLink="guide">Guide</a></li>
-          <li class="nav-item"><a class="nav-link text-600" routerLink="feedback">Feedback</a></li>
-          <li class="nav-item"><a class="nav-link text-600" routerLink="help">Help</a></li>
-          <!-- <li class="nav-item"><a class="nav-link text-600" routerLink="userprofile">User Profile</a></li> -->
-          <li class="nav-item"><a class="nav-link text-600" routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
-
-        </ul>
-        <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
-          <li class="nav-item">
-            <a href="/profile" class="nav-link" routerLink="profile"><img src="/assets/img/icons/profile.png" style="height: 25px;"></a>
-          </li>
-          <li class="nav-item">
-            <a href class="btn btn-lg btn-primary hover-top" (click)="logout()" style="background-color: rgba(255, 0, 0, 0.793);">Log Out</a>
+<nav>
+	<input id="nav-toggle" type="checkbox">
+	<div class="logo text-primary"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" routerLink="">
+    <img routerLink="" class="d-inline-block align-top img-fluid" src="/assets/img/gallery/logi-icon-test.png" alt="" width="100" />
+  </a><strong><span class="text fs-4 ps-2">Tripista</span></strong></div>
+	<ul class="links">
+		<li><a routerLink="">Home</a></li>
+		<li><a routerLink="districts">Districts</a></li>
+    <li><a routerLink="hotels">Hotels</a></li>
+    <li><a routerLink="guide">Guide</a></li>
+    <li><a routerLink="feedback">Feedback</a></li>
+    <li><a routerLink="help">Help</a></li>
+    <li><a routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
+    
+    
+      <ul class="" *ngIf="isLoggedIn">
+          <li class="">
+            <a href="/profile" routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
           </li>
         </ul>
-       <form class="ps-lg-5" *ngIf="!isLoggedIn">
-         <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
-       </form>
+        <ul class="" *ngIf="isLoggedIn">
+          <form class="links2">
+            <a class="btn btn-lg btn-danger hover-top" (click)="logout()" role="button">Log Out</a>
+          </form>
+        </ul>
 
-        <!-- <form class="ps-lg-5">
+      <ul>
+        <form class="links2" *ngIf="!isLoggedIn">
           <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
-        </form> -->
-        <form class="ps-lg-5">
+        </form>
+      </ul>
+
+      <ul>
+        <form class="links22">
           <a class="btn btn-lg btn-danger hover-top" *ngIf="_auth.adminloggedIn()" (click)="logoutUser()"  role="button">Admin Log Out</a>
         </form>
+      </ul>
+  
+
+  </ul>
 
 
-
-      </div>
-    </div>
+	<label for="nav-toggle" class="icon-burger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	</label>
 </nav>
-<!-- <div class="container">
-  <router-outlet></router-outlet>
-</div> -->
+
 
 

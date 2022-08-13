@@ -12,20 +12,20 @@
     
                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Guide Registration</p>
     
-                    <form name="RegForm" style="border-color: black;" class="mx-1 mx-md-4 row g-3" onsubmit="return formValues()" method="post">
+                    <form [formGroup]="addGuide" novalidate style="border-color: black;" class="mx-1 mx-md-4 row g-3" onsubmit="return formValues()" method="post">
 
     
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-6">
-                        <input type="text" id="first_name" class="form-control" style= "color: black" name="Name" placeholder="First Name"/>
+                        <input type="text" formControlName="first_name" id="first_name" class="form-control" style= "color: black" name="Name" placeholder="First Name"/>
                         </div>
                         <div class="form-outline flex-fill mb-0 col-md-6">
-                        <input type="text" id="last_name" class="form-control" style= "color: black" name="Name" placeholder="Last Name"/>
+                        <input type="text" formControlName="last_name" id="last_name" class="form-control" style= "color: black" name="Name" placeholder="Last Name"/>
                         </div>
                     </div>
     
-                    <div class="d-flex flex-row align-items-center mb-4 push-up">
+                    <!-- <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
                         <input type="text" id="address1" placeholder="Address Line 1" class="form-control" style="color: black;" name="Address1" />
@@ -37,45 +37,45 @@
                         <div class="form-outline flex-fill mb-0 col-12">
                             <input type="text" id="address2" placeholder="Address Line 2" class="form-control" style="color: black;" name="Address2" />
                         </div>
-                    </div>
+                    </div> -->
     
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-5">
-                        <select id="district" class="form-select">
-                            <option>District</option>
-                            <option value="Kasaragod">Kasaragod</option>
-                            <option value="Kannur">Kannur</option>
-                            <option value="Wayanad">Wayanad</option>
-                            <option value="Kozhikode">Kozhikode</option>
-                            <option value="Malappuram">Malappuram</option>
-                            <option value="Palakkad">Palakkad</option>
-                            <option value="Thrissur">Thrissur</option>
-                            <option value="Ernakulam">Ernakulam</option>
-                            <option value="Idukki">Idukki</option>
-                            <option value="Kottayam">Kottayam</option>
-                            <option value="Alappuzha">Alappuzha</option>
-                            <option value="Pathanamthitta">Pathanamthitta</option>
-                            <option value="Kollam">Kollam</option>
-                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                        <select style="color: black;" id="district" formControlName="district" class="form-select">
+                            <option class="opt" selected disabled value="">District</option>
+                            <option class="opt" value="Kasaragod">Kasaragod</option>
+                            <option class="opt" value="Kannur">Kannur</option>
+                            <option class="opt" value="Wayanad">Wayanad</option>
+                            <option class="opt" value="Kozhikode">Kozhikode</option>
+                            <option class="opt" value="Malappuram">Malappuram</option>
+                            <option class="opt" value="Palakkad">Palakkad</option>
+                            <option class="opt" value="Thrissur">Thrissur</option>
+                            <option class="opt" value="Ernakulam">Ernakulam</option>
+                            <option class="opt" value="Idukki">Idukki</option>
+                            <option class="opt" value="Kottayam">Kottayam</option>
+                            <option class="opt" value="Alappuzha">Alappuzha</option>
+                            <option class="opt" value="Pathanamthitta">Pathanamthitta</option>
+                            <option class="opt" value="Kollam">Kollam</option>
+                            <option class="opt" value="Thiruvananthapuram">Thiruvananthapuram</option>
                         </select>
                         </div>
                         <div class="form-outline flex-fill mb-0 col-md-3">
-                        <input type="text" class="form-control" style="color: black;" name="state" id="state" value="Kerala"/>
+                        <input type="text" formControlName="state" class="form-control" style="color: black;" name="state" id="state" placeholder="State"/>
                         </div>
-                        <div class="form-outline flex-fill mb-0 col-md-4">
+                        <!-- <div class="form-outline flex-fill mb-0 col-md-4">
                         <input type="text" class="form-control" style="color: black;" name="zip" id="zip" placeholder="Zip"/>
-                        </div>
+                        </div> -->
                     </div>
     
-                    <div class="d-flex flex-row align-items-center mb-4 push-up">
+                    <div class="d-flex flex-row align-items-center mb-4 push-up" style="margin: 0px;">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-md-4">
                         <fieldset class="row mb-3" style="margin-top: 15px;">
                             <legend class="col-form-label col-sm-3 pt-0">Gender</legend>
                             <div class="col-sm-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
+                                    <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="gridRadios1" value="Male" checked>
                                     <label class="form-check-label" for="gridRadios1">
                                         Male
                                     </label>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female">
+                                    <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="gridRadios2" value="Female">
                                     <label class="form-check-label" for="gridRadios2">
                                         Female
                                     </label>
@@ -91,8 +91,8 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Transgender">
-                                    <label class="form-check-label" for="gridRadios1">
+                                    <input class="form-check-input" type="radio" formControlName="gender" name="gender" id="gridRadios3" value="Transgender">
+                                    <label class="form-check-label" for="gridRadios3">
                                         Transgender
                                     </label>
                                 </div>
@@ -104,26 +104,26 @@
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
-                            <input type="email" id="email" placeholder="Email" class="form-control" style="color: black;" name="email" />
+                            <input type="email" formControlName="email" id="email" placeholder="Email" class="form-control" style="color: black;" name="email" />
                         </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
-                            <input type="text" id="phone" placeholder="Phone no." class="form-control" style="color: black;" name="phone" />
+                            <input type="text" formControlName="phone" id="phone" placeholder="Phone no." class="form-control" style="color: black;" name="phone" />
                         </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
-                            <label for="dob">Date of Birth:</label>
-                            <input type="date" id="dob" placeholder="DOB" class="form-control" style="color: black;" name="dob" />
+                            <label for="dob">Date of Birth</label>
+                            <input formControlName="dob" type="date" id="dob" placeholder="DOB" class="form-control" style="color: black;" name="dob" />
                         </div>
                     </div>
 
-                    <div class="d-flex flex-row align-items-center mb-4 push-up">
+                    <!-- <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
                             <select id="district" class="form-select">
@@ -133,13 +133,21 @@
                                 <option value="voter_id">Voter ID</option>
                             </select>
                         </div>
+                    </div> -->
+
+                    <div class="d-flex flex-row align-items-center mb-4 push-up">
+                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline flex-fill mb-0 col-12">
+                            <label for="scanned_proof">Upload any valid ID proof</label>
+                            <input type="file" formControlName="id_proof" id="id_proof" class="form-control" style="color: black;" name="id_proof" />
+                        </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4 push-up">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0 col-12">
-                            <label for="scanned_proof"> Select a scanned copy of ID proof to upload :</label>
-                            <input type="file" id="scanned_proof" class="form-control" style="color: black;" name="scanned_proof" />
+                            <label for="biodata">Upload your Biodata</label>
+                            <input type="file" formControlName="biodata" id="biodata" class="form-control" style="color: black;" name="biodata" />
                         </div>
                     </div>
     
@@ -148,7 +156,7 @@
                     </div>
     
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4  push-up">
-                        <button type="submit" name="Submit" class="btn btn-primary btn-lg">Register</button>
+                        <button type="submit" (click)="onSubmit()" name="Submit" class="btn btn-primary btn-lg">Register</button>
                     </div>
     
                     </form>

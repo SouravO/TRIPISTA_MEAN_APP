@@ -31,7 +31,6 @@ import { KannurComponent } from './kannur/kannur.component';
 import { HotelsComponent } from './hotels/hotels.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FooterComponent } from './footer/footer.component';
-import { GuideRegComponent } from './guide-reg/guide-reg.component';
 import { AddhotelComponent } from './addhotel/addhotel.component';
 import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
 import { AdminComponent } from './admin/admin.component';
@@ -39,9 +38,15 @@ import { AuthadminService } from './authadmin.service';
 import { AuthadminGuard } from './authadmin.guard';
 import { HotelsService } from './hotels.service';
 import { FeedbackService } from './feedback.service';
+import { GuideRegComponent } from './guide-reg/guide-reg.component';
+import { GuideDetailsComponent } from './guide-details/guide-details.component';
+import { GuidesService } from './guides.service';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
+
 
 @NgModule({
   declarations: [
@@ -69,8 +74,9 @@ import { SearchComponent } from './search/search.component';
     KannurComponent,
     HotelsComponent,
     FeedbackComponent,
-    FooterComponent,
+    GuideDetailsComponent,
     GuideRegComponent,
+    FooterComponent,
     AddhotelComponent,
     UpdatehotelComponent,
     AdminComponent,
@@ -83,8 +89,9 @@ import { SearchComponent } from './search/search.component';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    SlickCarouselModule,
   ],
-  providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,
+  providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,GuidesService,
   {
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptorService,

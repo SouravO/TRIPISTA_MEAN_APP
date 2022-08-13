@@ -99,9 +99,11 @@ app.post('/admin',(req,res)=> {
 
 const userRoute = require('./routes/hotelroutes')
 const feedbackRoute = require('./routes/feedback.route')
+const guideRoute = require('./routes/guide.routes')
 
 app.use('/endpoint' , userRoute);
 app.use('/endpoints' , feedbackRoute);
+app.use('/endpointss' , guideRoute);
 
 const port = process.env.PORT || 8080;
 
