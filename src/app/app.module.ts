@@ -98,6 +98,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     HttpClientModule,
     SlickCarouselModule,
     NgbModule
+
   ],
   providers: [HotelsService,AuthadminService,AuthadminGuard,authInterceptorProviders,FeedbackService,GuidesService,
   {
