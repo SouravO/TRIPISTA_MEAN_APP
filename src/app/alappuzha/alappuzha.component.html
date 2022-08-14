@@ -18,7 +18,7 @@
       
                   <!-- landing page -->
                   <section class="pt-2">
-                      <div class="hero-image" style="background-image: url('/assets/img/gallery/kochi12.jpg')">;
+                      <div class="hero-image" style="background-image: url('/assets/img/gallery/marari12.jpg')">;
                           <div class="hero-text image-txt">
                               <h3>Explore</h3>
                               <h1 class="underline-red">Alappuzha</h1>
@@ -46,13 +46,10 @@
                               </ngx-slick-carousel> <!-- competitions-carousel : ends -->
                           </div>
                           <div class=" details  p-4   col-12 col-lg-6 ">
-                              <h2>About</h2>
-                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ea consectetur repellat
-                                  architecto
-                                  corrupti, quam eaque expedita nam hic cumque molestiae alias dolore quasi tempore? Eveniet,
-                                  aliquam
-                                  rem! Vero, voluptatibus!
-                                  lo</p>
+                              <h2>About Alappuzha</h2>
+                              <p>Referred to as the Venice of the East, Alappuzha has always enjoyed an important place in the maritime history of Kerala. 
+                                Today, it is famous for its boat races, backwater holidays, beaches, marine products and coir industry. Alappuzha Beach is a popular picnic spot. 
+                                The pier, which extends out to the sea here, is over 137 years old. Entertainment facilities at the Vijaya Beach Park add to the attraction of the beach.</p>
                           </div>
               
               
@@ -71,33 +68,36 @@
         <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
           <div class="card d-flex position-relative flex-column">
               <div class='cardspimg imgContainer'>
-                  <img src='/assets/img/gallery/matt123.jpeg'>
-                  <h2>Mattancherry Palace</h2>
+                  <img src='/assets/img/gallery/Ala123.jpg'>
+                  <h2>Stay in Houseboat</h2>
               </div>
               <div class="content">
                   <h2></h2>
-                  <p>Mattancherry Palace, located in Palace Road and built by the Portuguese as early as 1557, is considered to be one of the important places to visit in Cochin in 1 day.
-                    Popularly known as Dutch Palace.</p>
+                  <p>A vacation to Kerala is incomplete without spending some relaxing time, cruising through the backwaters of Alleppey. 
+                    You can sit back and relax as you enjoy the magnificent setting of beautiful coconut fringed waters, paddy fields and lovely sights of the human-made islands.</p>
               </div>
           </div>
           <div class="card d-flex position-relative flex-column">
               <div class='cardsp imgContainer'>
-                  <img src='/assets/img/gallery/Mardr12.jpg'>
-                  <h2>Marine Drive</h2>
+                  <img src='/assets/img/gallery/marari12.jpg'>
+                  <h2>Marari Beach</h2>
                 </div>
               <div class="content">
                   <h2></h2>
-                  <p>Like most of them in the coastal areas, Marine Drive is among the most beautiful and romantic places to see in Kochi. Just watching the gamboling waves and the magnificent sunset will leave you mesmerized. </p>
-                </div>
-          </div>
+                  <p>One of the great delights of the Malabar Coast, the Marari Beach is an idyllic serene beach. About 11 km from the city of Alleppey, 
+                    this beach is a hotspot for fishing activity, deriving its name from the local fishing village Mararikulam.
+                    Visiting in August gives tourists the exclusive opportunity to view Snake Boat races across the waters.</p></div>
+         </div>
           <div class="card d-flex position-relative flex-column">
               <div class='cardsp imgContainer'>
-                  <img src='/assets/img/gallery/fort123.jpg'>
-                  <h2>Fort Kochi Beach</h2>
+                  <img src='/assets/img/gallery/boatrace12.jpg'>
+                  <h2>Nehru Trophy Snake Boat Race</h2>
                 </div>
               <div class="content">
                   <h2></h2>
-                  <p>There are some places that do not lose their charm even when they are bustling with tourists. Fort Kochi Beach is one of the best places to visit in Fort Kochi.</p>
+                  <p>One of the most exciting events to be held in Lake in Alleppey is the Nehru Trophy Boat Race, 
+                    which is a yearly competitive boating event held on the second Saturday of every August, during the Onam festival. 
+                    The most popular event is the Snake Boat Race, which is a thrilling event to watch as well as participate in.</p>
                 </div>
           </div>
           <div class="card d-flex position-relative flex-column">
@@ -178,8 +178,10 @@
 
 <!-- ---------------------- -->
 <!-- guides list -->
-        <div class="row">
-          <div *ngFor="let guide of guides">
+<br>
+<br>
+<div class="row">
+  <div *ngFor="let guide of guides">
             <div>
               <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
                 <div class="card">

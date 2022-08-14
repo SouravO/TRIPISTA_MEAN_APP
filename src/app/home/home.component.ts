@@ -8,6 +8,7 @@ import { FeedbackService } from '../feedback.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  slideConfig = {"slidesToShow": 1, "slidesToScroll": 1 , autoplay:true, autoplaySpeed:2000};
   feedbacks: any;
 
   constructor( private feedbackservice:FeedbackService 
