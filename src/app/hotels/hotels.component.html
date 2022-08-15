@@ -9,7 +9,7 @@
           <br>
           <div class='hdht card-header text-center'>Hotels</div>
           <div *ngFor="let hotel of hotels">
-            <div *ngIf="hotel.hotelAddress == 'Wayanad'"> 
+            <!-- <div *ngIf="hotel.hotelAddress == ''">  -->
           <div *ngIf="searchText === '' || hotel.hotelName.toLowerCase().includes(searchText) || hotel.hotelAddress.toLowerCase().includes(searchText) " class="wrapper">
             <h1>{{hotel.hotelName}}</h1>
               <!-- <div class="image i1"></div> -->
@@ -29,6 +29,6 @@
 </div>
 </div>
 </div>
-</div>
+<!-- </div> -->
 </section>
 
