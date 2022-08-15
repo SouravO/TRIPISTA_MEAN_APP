@@ -190,7 +190,7 @@ gallery */
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   color: white;
-  position: relative;
+  position:relative;
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -438,3 +438,6 @@ background-clip : text;
 padding-bottom: 10px;
 }
 
+
+
+/* hotels */

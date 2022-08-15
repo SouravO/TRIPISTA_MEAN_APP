@@ -9,8 +9,9 @@
           <br>
           <div class='hdht card-header text-center'>Hotels</div>
           <div *ngFor="let hotel of hotels">
+            <div *ngIf="hotel.hotelAddress == 'Wayanad'"> 
           <div *ngIf="searchText === '' || hotel.hotelName.toLowerCase().includes(searchText) || hotel.hotelAddress.toLowerCase().includes(searchText) " class="wrapper">
-              <h1>{{hotel.hotelName}}</h1>
+            <h1>{{hotel.hotelName}}</h1>
               <!-- <div class="image i1"></div> -->
               <div><img [src] = 'hotel.hotelImageUrl' class="image"></div>
               <div class="details"><h1><em>{{hotel.hotelStarrating}}*
@@ -22,6 +23,7 @@
     <a href="updatehotel/{{hotel._id}}" *ngIf="_auth.adminloggedIn()" class="btn btn-success btn-lg mt-3 center">Edit</a>
     <button *ngIf="_auth.adminloggedIn()" (click)="delHotel(hotel)"  class="btn btn-danger btn-lg mt-3 center">Delete</button>
   </div>
+</div> 
   
 
 </div>

@@ -1,13 +1,4 @@
 <br><br><br>
-      <!-- <section class="py-0"> -->
-        <!-- <div class="bg-holder d-none d-md-block" style="background-image:url(/public/img/gallery/wetfu.jpg);background-position:right bottom;background-size:contain;">
-        </div> -->
-        <!--/.bg-holder-->
-        <!-- <div class="top-left">
-        <h1 class="disthead">Alappuzha</h1>
-        </div>
-        <img src="/assets/img/gallery/alappuzha123.jpg" alt=""> -->
-
 
 
         <section class="vh-100" style="background-color: rgb(255, 255, 255);">
@@ -102,86 +93,83 @@
           </div>
           <div class="card d-flex position-relative flex-column">
               <div class='cardsp imgContainer'>
-                  <img src='/assets/img/gallery/fort123.jpg'>
-                  <h2>Fort Kochi Beach</h2>
+                  <img src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGKRQ7OWl79wt0u6pn3xqRBwys22zAEP_TYkbq9U7l7BuEfg8_JmaqFV1abV9mxvDdih3hOY04Mm9HJg'>
+                  <h2>Pathiramanal Island</h2>
                 </div>
               <div class="content">
                   <h2></h2>
-                  <p>There are some places that do not lose their charm even when they are bustling with tourists. Fort Kochi Beach is one of the best places to visit in Fort Kochi.</p>
+                  <p>Pathiramanal is a small island inMuhamma panchayat of Alappuzha district. The name Pathiramanal means 'midnight sand'. The scenic beauty of both sides of the lake as well as that of the island is mind blowing. It is home to many rare varieties of migratory birds from different parts of the world.</p>
                 </div>
           </div>
       </div>
-      </div>
-      <hr style="color: grey;">
+      
+      <!-- <hr style="color: grey;"> -->
+</div>
+</div>
+</div>
+
       <!-- hovering cards ends -->
       
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr style="color: grey;">
+      </section>
+
       
       
-      
-      <!-- hotels starts -->
+      <!-- hotels starts ----------->
+      <section class="container">
+        
+        <!-- <div class="row d-flex justify-content h-100"> -->
+          <div class="col-xl-3" >
+        <div *ngFor="let hotel of hotels" >
+          <div *ngIf="hotel.hotelAddress == 'Alappuzha'">
+          
               
-      <div class="pt-2">
-        <div class="container row ">
-            <h2 class="d-flex justify-content-center">
-                <div class="underline--blue">Hotels</div>
-            </h2>
-            <div class="col-sm-6 col-lg-4 pt-4">
-                <div class="card"
-                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://31.media.tumblr.com/9e9ba532a3174811c79e07bc4a61ebdc/tumblr_n92w6iRSjY1r5gmiko1_500.jpg); width:100% ; height:40vh ;">
-                    <div class="card-category">Nirmalyam</div>
-                    <div class="card-description">
-                        <h2>Ernakulam</h2>
-                        <p style="color: rgb(236, 215, 215);">7894561237, <a>www.nirmalyam.com</a></p>
-                    </div>
-                    <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-                    <a class="card-link"></a>
+              <div class="card"
+              style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://31.media.tumblr.com/9e9ba532a3174811c79e07bc4a61ebdc/tumblr_n92w6iRSjY1r5gmiko1_500.jpg); width:100% ; height:40vh ;">
+              <div class="card-category">{{hotel.hotelName}}</div>
+                  <div class="card-description">
+                    <h2>{{hotel.hotelAddress}}</h2>
+                    <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+                    <p style="color: rgba(236, 215, 215, 0.727);">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+                  </div>
                 </div>
+              </div>
+              </div>
             </div>
-            <div class="col-sm-6 col-lg-4 pt-4">
-                <div class="card"
-                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://www.berjayahotel.com/sites/default/files/styles/gallery_slide/public/colombo_1-1.jpg); width:100% ; height:40vh ;">
-                    <div class="card-category">City</div>
-                    <div class="card-description">
-                        <h2>home</h2>
-                        <p>Lorem</p>
-                    </div>
-                    <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-                    <!-- <a class="card-link" href=""></a> -->
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 pt-4">
-                <div class="card"
-                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://media-cdn.tripadvisor.com/media/photo-s/06/c7/ba/92/salah-satu-bangunan-di.jpg); width:100% ; height:40vh ;">
-                    <div class="card-category">City</div>
-                    <div class="card-description">
-                        <h2>home</h2>
-                        <p>Lorem</p>
-                    </div>
-                    <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-                    <!-- <a class="card-link"></a> -->
-                </div>
-            </div>
+            
+           
+     
+          </section>
       
-        </div>
-      </div>
+
+
+
+                
+    
+
+      <!-- hotels end ----------->
       
 
 <!-- guides of alappuzha -->
-<br><br><br><br><br>
+<!-- <br><br><br><br><br> -->
 <!-- guides of alappuzha end-->
 
 
 
-
-      </div>
-      </div>
+      
 
 <!-- ---------------------- -->
 <!-- guides list -->
-<br>
-<br>
-<div class="row">
-  <div *ngFor="let guide of guides">
+<!-- <br> -->
+<!-- <br> -->
+<!-- <div class="row"> -->
+  <!-- <hr style="color: grey;"> -->
+  <!-- <div *ngFor="let guide of guides">
             <div>
               <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
                 <div class="card">
@@ -200,6 +188,8 @@
               </div>
             </div>
           </div>
-      
-        </div>
+       -->
+        <!-- </div> -->
 <!-- guides list ends-->
+
+
