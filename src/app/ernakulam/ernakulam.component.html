@@ -1,13 +1,3 @@
-<!-- <br><br><br>
-<section class="py-0">
-  <div class="top-left">
-  <h1 class="disthead1">Ernakulam</h1>
-
-  </div>
-  <img src="/assets/img/gallery/kochi123.jpg" alt="">
-   -->
-
-
 
    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
     <div class="container h-100">
@@ -45,13 +35,10 @@
                         </ngx-slick-carousel> <!-- competitions-carousel : ends -->
                     </div>
                     <div class=" details  p-4   col-12 col-lg-6 ">
-                        <h2>About</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ea consectetur repellat
-                            architecto
-                            corrupti, quam eaque expedita nam hic cumque molestiae alias dolore quasi tempore? Eveniet,
-                            aliquam
-                            rem! Vero, voluptatibus!
-                            lo</p>
+                        <h2>About Ernakulam</h2>
+                        <p>Ernakulam refers to the eastern, mainland portion of the twin cities of Ernakulam-Kochi in central Kerala, India. 
+                            Located on the coast of the Arabian Sea, Ernakulam is a booming business metropolis. It is often referred to as the commercial capital of Kerala. 
+                            Ernakulam has been a part of human settlements since the Stone Age. Rock-cut caves and dolmens are still a part of this city.</p>
                     </div>
         
         
@@ -86,7 +73,8 @@
           </div>
         <div class="content">
             <h2></h2>
-            <p>Like most of them in the coastal areas, Marine Drive is among the most beautiful and romantic places to see in Kochi. Just watching the gamboling waves and the magnificent sunset will leave you mesmerized. </p>
+            <p>Like most of them in the coastal areas, Marine Drive is among the most beautiful and romantic places to see in Kochi. 
+                Just watching the gamboling waves and the magnificent sunset will leave you mesmerized. </p>
           </div>
     </div>
     <div class="card d-flex position-relative flex-column">
@@ -101,12 +89,12 @@
     </div>
     <div class="card d-flex position-relative flex-column">
         <div class='cardsp imgContainer'>
-            <img src='/assets/img/gallery/fort123.jpg'>
-            <h2>Fort Kochi Beach</h2>
+            <img src='https://cdn.s3waas.gov.in/s3621bf66ddb7c962aa0d22ac97d69b793/uploads/bfi_thumb/2018032089-olw9opq23rz82m2chngmhen0v7ob3ajairi49m822y.jpg'>
+            <h2>Bolgatty Palae</h2>
           </div>
         <div class="content">
             <h2></h2>
-            <p>There are some places that do not lose their charm even when they are bustling with tourists. Fort Kochi Beach is one of the best places to visit in Fort Kochi.</p>
+            <p>This is the oldest palace built by the Dutch outside the Kingdom of Holland. The palace was built by a Dutch merchant in 1744. Later, it was renovated with a magnificent lawn and a number of reforms. The palace served as the official residence of Dutch Governor.</p>
           </div>
     </div>
 </div>
@@ -119,50 +107,32 @@
 
 <!-- hotels starts -->
         
-<div class="pt-2">
-  <div class="container row ">
-      <h2 class="d-flex justify-content-center">
-          <div class="underline--blue">Hotels</div>
-      </h2>
-      <div class="col-sm-6 col-lg-4 pt-4">
-          <div class="card"
-              style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://31.media.tumblr.com/9e9ba532a3174811c79e07bc4a61ebdc/tumblr_n92w6iRSjY1r5gmiko1_500.jpg); width:100% ; height:40vh ;">
-              <div class="card-category">Nirmalyam</div>
-              <div class="card-description">
-                  <h2>Ernakulam</h2>
-                  <p style="color: rgb(236, 215, 215);">7894561237, <a>www.nirmalyam.com</a></p>
-              </div>
-              <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-              <a class="card-link"></a>
-          </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 pt-4">
-          <div class="card"
-              style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://www.berjayahotel.com/sites/default/files/styles/gallery_slide/public/colombo_1-1.jpg); width:100% ; height:40vh ;">
-              <div class="card-category">City</div>
-              <div class="card-description">
-                  <h2>home</h2>
-                  <p>Lorem</p>
-              </div>
-              <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-              <!-- <a class="card-link" href=""></a> -->
-          </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 pt-4">
-          <div class="card"
-              style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://media-cdn.tripadvisor.com/media/photo-s/06/c7/ba/92/salah-satu-bangunan-di.jpg); width:100% ; height:40vh ;">
-              <div class="card-category">City</div>
-              <div class="card-description">
-                  <h2>home</h2>
-                  <p>Lorem</p>
-              </div>
-              <!-- <img class="card-user avatar avatar-large" width="10vh" height="100vh" src=""> -->
-              <!-- <a class="card-link"></a> -->
-          </div>
-      </div>
-
+<!-- hotels starts ----------->
+<div style="  text-align: center;">
+    <h1 class=""><u>Hotels</u></h1>
   </div>
-</div>
+  <section class="container pt-2 container-c">
+    <div class="" >
+    </div>
+    <br>
+    <ng-container *ngFor="let hotel of hotels">
+      <ng-container class="" *ngIf="hotel.hotelAddress == 'Ernakulam'">
+        <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+          style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+          <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+          <div class="card-description">
+            <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+            <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+            <p style="color: rgba(235, 211, 211, 0.925); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </section>
+
+
+
+  <!-- hotels end ----------->
 
 
 
@@ -186,20 +156,6 @@
 
 
 
-
-
-
-        
-                
-        
-                
-        
-
-
-
-
-        
-        
 
         
  

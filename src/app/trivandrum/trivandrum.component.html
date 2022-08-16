@@ -1,12 +1,169 @@
-<br><br><br>
-<section class="py-0">
-    <!-- <div class="bg-holder d-none d-md-block" style="background-image:url(/public/img/gallery/wetfu.jpg);background-position:right bottom;background-size:contain;">
-    </div> -->
-    
-    <!--/.bg-holder-->
 
-    <div class="top-left">
-    <h1 class="disthead">Trivandrum</h1>
+    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-14 col-xl-13">
+    
+    
+                <!-- landing page -->
+                <section class="pt-2">
+                    <div class="hero-image" style="background-image: url('/assets/img/gallery/tri123.jpg')">;
+                        <div class="hero-text image-txt">
+                            <h3>Explore</h3>
+                            <h1 class="underline-red">Thiruvananthapuram</h1>
+                        </div>
+                    </div>
+            
+            
+                </section>
+                </div>
+                </div>
+                </div>
+              </section>
+    
+                <!-- about US  -->
+            
+                <section class="container pt-2 col-md-8">
+            
+            
+                    <section class="pt-1  about-us  row">
+                        <div class="col col-12 col-lg-6 gallery">
+                            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let image of images" class="slide">
+                                    <img [src]='image' />
+                                </div>
+                            </ngx-slick-carousel> <!-- competitions-carousel : ends -->
+                        </div>
+                        <div class=" details  p-4   col-12 col-lg-6 ">
+                            <h2>About Thiruvananthapuram</h2>
+                            <p>A gracious and evergreen city spread over seven hills, Thiruvananthapuram, capital of Kerala, is steeped in history and culture. Located in the extreme south of the state, its shores are washed by the warm waters of the Arabian Sea. This is a city where time moves gracefully with the day unfolding according to time honoured rhythms, qualities which make it one of the best cities in the country. Holding fort in the heart of the capital is Sri Padmanabhaswamy Temple.</p>
+                        </div>
+            
+            
+                    </section>
+                    <!-- about us ends -->
+    
+    
+    <div class="wrapper-grey padded">
+      <div class="container row">
+    
+    <!-- hovering cards starts-->
+    <div class="cardsp">
+      <h2 class="hdtxt text-center" >Top Destinations</h2>
+      <hr style="color: grey;">
+      <br><br><br><br>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardspimg imgContainer'>
+                <img src='/assets/img/gallery/padmn12.jpg'>
+                <h2>Padmanabhaswamy Temple</h2>
+            </div>
+            <div class="content">
+                <h2></h2>
+                <p>One of the 108 Divya Desams, Sree Padmanabhaswamy Temple is located in Thiruvananthapuram, the capital city of Kerala. 
+                  Embellished in gold-plated covering, the temple is opened only to Hindu followers.</p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/neyyr12.jpg'>
+                <h2>Neyyar Dam & Wildlife Sanctuary</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Famous for its Lion and Deer Safari, Neyyar Wildlife Sanctuary is a treat for nature enthusiasts. The park houses a crocodile farm and elephant rehabilitation centre.</p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/agasthy12.jpg'>
+                <h2>Agasthyakoodam</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Agastyakoodam, also known as Agastya Mala Peak is the second highest peak in Kerala with an extensive height of 1868 metre. 
+                  Located within the premises of Neyyar Wildlife Sanctuary, Agastyakoodam is part of the Agasthyamala Biosphere Reserve and boasts of surreal natural beauty. 
+                  </p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='https://images.thrillophilia.com/image/upload/s--sqxj9ESH--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/098/963/original/1471588798_padmanabhapuram-20palace-20edit.jpg.jpg'>
+                <h2>Padmanabhapuram Palace</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Rejoicing in all its glory, the Padmanabhapuram Palace is located 64 km from Thiruvananthapuram in Thuckalay. This 16th century palace quenches the thirst of art lovers. This fascinating structure has a special air about it. The rosewood carved ceilings and a fine collection of paintings makes it one of the best specimens of Kerala</p>
+              </div>
+        </div>
+    </div>
+    </div>
+    <hr style="color: grey;">
+    <!-- hovering cards ends -->
+    
+    
+    
+ <!-- hotels starts ----------->
+ <div style="  text-align: center;">
+  <h1 class=""><u>Hotels</u></h1>
+</div>
+<section class="container pt-2 container-c">
+  <div class="" >
+  </div>
+  <br>
+  <ng-container *ngFor="let hotel of hotels">
+    <ng-container class="" *ngIf="hotel.hotelAddress == 'Trivandrum'">
+      <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+        style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+        <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+        <div class="card-description">
+          <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+          <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+          <p style="color: rgba(236, 215, 215, 0.727); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</section>
+
+
+
+<!-- hotels end ----------->
+
+    
+
+<!-- guides of alappuzha -->
+<br><br><br><br><br>
+<!-- guides of alappuzha end-->
+
+
+
 
     </div>
-    <img src="/assets/img/gallery/trivandrum123.jpg" alt="">
+    </div>
+
+<!-- ---------------------- -->
+<!-- guides list -->
+      <!-- <div class="row">
+        <div *ngFor="let guide of guides">
+          <div>
+            <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    {{guide.first_name}}
+                    {{guide.last_name}}
+                  </h5>
+                  <p class="card-text">
+                    {{guide.email}} <br>
+                    {{guide.phone}} <br>
+                    {{guide.district}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div> -->
+<!-- guides list ends-->

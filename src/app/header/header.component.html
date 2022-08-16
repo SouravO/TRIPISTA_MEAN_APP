@@ -4,8 +4,8 @@
 <nav>
 	<input id="nav-toggle" type="checkbox">
 	<div class="logo text-primary"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" routerLink="">
-    <img routerLink="" class="d-inline-block align-top img-fluid" src="/assets/img/gallery/logi-icon-test.png" alt="" width="100" />
-  </a><strong><span class="text fs-4 ps-2">Tripista</span></strong></div>
+    <img routerLink="home" class="d-inline-block align-top img-fluid" src="/assets/img/gallery/logi-icon-test.png" alt="" width="100" />
+  </a><strong ><span class="text fs-4 ps-2">Tripista</span></strong></div>
 	<ul class="links">
 		<li><a routerLink="">Home</a></li>
 		<li><a routerLink="districts">Districts</a></li>
@@ -14,6 +14,7 @@
     <!-- <li><a routerLink="feedback">Feedback</a></li> -->
     <li><a routerLink="help">Help</a></li>
     <li><a routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
+
     <ul class="links" *ngIf="isLoggedIn">
       <li>
         <a href="/feedback" routerLink="feedback">Feedback</a>
@@ -29,26 +30,7 @@
      <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
    </form>
 
-      <!-- <ul class="navbar-nav pt-2 ml-auto" *ngIf="isLoggedIn">
-        <li class="nav-item">
-          <a href="/feedback" class="nav-link" routerLink="feedback">Feedback</a>
-        </li>
-        <li class="">
-          <a href="/profile" class="nav-link"  routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
-        </li>
-
-      </ul> -->
-        <!-- <ul class="" *ngIf="isLoggedIn">
-          <form class="links2">
-            <a class="btn btn-lg btn-danger hover-top" (click)="logout()" role="button">Log Out</a>
-          </form>
-        </ul> -->
-
-      <!-- <ul>
-        <form class="links2" *ngIf="!isLoggedIn">
-          <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
-        </form>
-      </ul> -->
+    
 
       <ul>
         <form class="links22">

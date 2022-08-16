@@ -2,30 +2,6 @@
     <!-- ===============================================-->
     <!-- Login Form-->
     <!-- ===============================================-->
-
-    <!-- <div class="container">
-      <div class="row">
-         <div class="col-lg-12 text-center" style="padding-top: 20px;">
-            <div class="container box" style="margin-top: 10px; padding-left: 0px; padding-right: 0px;">
-               <div class="row">
-                  <div class="col-12" style="text-align: center;">
-                                       <form [formGroup] = "formData" (ngSubmit)="onClickSubmit(formData.value)"
-                                             class="form-signin">
-                                       <h2 class="form-signin-heading">Please sign in</h2>
-                                       <label for="inputEmail" class="sr-only">Email address</label>
-                                       <input type="text" id="username" class="form-control"
-                                             formControlName="userName" placeholder="Username" required autofocus>
-                                       <label for="inputPassword" class="sr-only">Password</label>
-                                       <input type="password" id="inputPassword" class="form-control"
-                                             formControlName="password" placeholder="Password" required>
-                                       <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                                       </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
     <section class="vh-100" style="background-color: rgb(238, 238, 238);">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -42,8 +18,7 @@
       name="form"
       (ngSubmit)="f.form.valid && onSubmit()"
       #f="ngForm"
-      novalidate
-    >
+      novalidate>
       <div class="form-group">
         <label for="username">Username</label>
         <input
@@ -102,8 +77,13 @@
       </div>
     </form>
 
+
     <div class="alert alert-success" *ngIf="isLoggedIn" style="width: fit-content; margin: 100px;">
       Logged in successfully as {{ currentUser.username }}
+
+    <div class="alert alert-success" *ngIf="isLoggedIn">
+      Logged in as {{ roles }}.
+
     </div>
 
                   </div>
@@ -122,6 +102,8 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-    <app-footer></app-footer>
+
+

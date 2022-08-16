@@ -1,12 +1,175 @@
-<br><br><br>
-<section class="py-0">
-    <!-- <div class="bg-holder d-none d-md-block" style="background-image:url(/public/img/gallery/wetfu.jpg);background-position:right bottom;background-size:contain;">
-    </div> -->
-    
-    <!--/.bg-holder-->
 
-    <div class="top-left">
-    <h1 class="disthead">Kannur</h1>
+    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-14 col-xl-13">
+    
+    
+                <!-- landing page -->
+                <section class="pt-2">
+                    <div class="hero-image" style="background-image: url('/assets/img/gallery/kan123.webp')">;
+                        <div class="hero-text image-txt">
+                            <h3>Explore</h3>
+                            <h1 style="margin-bottom: 180px;" class="underline-red">Kannur</h1>
+                        </div>
+                    </div>
+            
+            
+                </section>
+                </div>
+                </div>
+                </div>
+              </section>
+    
+                <!-- about US  -->
+            
+                <section class="container pt-2 col-md-8">
+            
+            
+                    <section class="pt-1  about-us  row">
+                        <div class="col col-12 col-lg-6 gallery">
+                            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let image of images" class="slide">
+                                    <img [src]='image' />
+                                </div>
+                            </ngx-slick-carousel> <!-- competitions-carousel : ends -->
+                        </div>
+                        <div class=" details  p-4   col-12 col-lg-6 ">
+                            <h2>About Kannur</h2>
+                            <p>Kannur is most renowned for the Theyyam performances in its temples. This magnificent art form plays an integral part in the culture of this Northern Kerala district. 
+                              Formerly known as Cannanore, Marco Polo christened it a ‘Great Emporium Of Spice Trade’. Kannur has, since time immemorial, been hailed as an influential sea port.
+                               Legend has it that it had interactions and trade relations with the rest of the world since the time of King Solomon to the Greeks, 
+                              Arabs and Romans.</p>
+                        </div>
+            
+            
+                    </section>
+                    <!-- about us ends -->
+    
+    
+    <div class="wrapper-grey padded">
+      <div class="container row">
+    
+    <!-- hovering cards starts-->
+    <div class="cardsp">
+      <h2 class="hdtxt text-center" >Top Destinations</h2>
+      <hr style="color: grey;">
+      <br><br><br><br>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardspimg imgContainer'>
+                <img src='/assets/img/gallery/paymb123.jpeg'>
+                <h2>Payyambalam Beach</h2>
+            </div>
+            <div class="content">
+                <h2></h2>
+                <p>The impeccably unspoiled Payyabalam beach is adorned with sparkling pearls of golden sand and foamy white waves of the Arabian Sea. 
+                  The highlight of Kannur and one of the many beautiful beaches of Kerala, the Payyabalam beach has an incredibly peaceful and inviting aura. 
+                  </p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/stang12.jpg'>
+                <h2>St Angelo Fort</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>St Angelos Fort is definitely one of the most popular and frequently visited attractions of Kannur and for more reasons than one. 
+                  The polished yet prehistoric structure of this fortress oozes with unadulterated elegance and overwhelming power. Standing ashore in the Arabian sea.
+                </p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/muzh12.jpg'>
+                <h2>Muzhappilangad Beach</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>The Muzzhapilangad Drive-in Beach at Kannur is one referred to with many superlatives- as the longest drive-in beach in the whole of India, 
+                  as one of the cleanest beaches of Kannur and most importantly, as one of the best drive-in beaches that the entire Asian continent has to offer!
+                </p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='https://res.cloudinary.com/thrillophilia/image/upload/c_fill,dpr_1.0,f_auto,fl_progressive.strip_profile,g_center,h_450,q_auto,w_753/v1/filestore/2ev54kl2s9jcuga2m4fs1i25h1zp_palakkayam_thattu_paradise_found20190831101025_941_1.jpg'>
+                <h2>Palakkayam Thattu</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Palakkayam Thattu is one of the alluring places to visit in Kannur near the Western Ghats because of the verdant greenery and dizzying height of about 3350 feet above the sea level. It also happens to be one of the most visited hill stations in the state of Kerala. Populated by dense forests and several hillocks, the quaint hamlet is a favoured destination for avid trekkers.</p>
+              </div>
+        </div>
+    </div>
+    </div>
+    <hr style="color: grey;">
+    <!-- hovering cards ends -->
+    
+    
+    
+    
+      <!-- hotels starts ----------->
+      <div style="  text-align: center;">
+        <h1 class=""><u>Hotels</u></h1>
+      </div>
+      <section class="container pt-2 container-c">
+        <div class="" >
+        </div>
+        <br>
+        <ng-container *ngFor="let hotel of hotels">
+          <ng-container class="" *ngIf="hotel.hotelAddress == 'Kannur'">
+            <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+              style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+              <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+              <div class="card-description">
+                <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+                <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+                <p style="color: rgba(236, 215, 215, 0.727); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+              </div>
+            </div>
+          </ng-container>
+        </ng-container>
+      </section>
+    
+
+
+      <!-- hotels end ----------->
+    
+
+<!-- guides of alappuzha -->
+<br><br>
+<!-- guides of alappuzha end-->
+
+
+
 
     </div>
-    <img src="/assets/img/gallery/kannur123.jpg" alt="">
+    </div>
+
+<!-- ---------------------- -->
+<!-- guides list -->
+      <!-- <div class="row">
+        <div *ngFor="let guide of guides">
+          <div>
+            <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    {{guide.first_name}}
+                    {{guide.last_name}}
+                  </h5>
+                  <p class="card-text">
+                    {{guide.email}} <br>
+                    {{guide.phone}} <br>
+                    {{guide.district}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div> -->
+<!-- guides list ends-->

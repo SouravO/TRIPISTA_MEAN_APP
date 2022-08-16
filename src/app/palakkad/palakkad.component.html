@@ -1,12 +1,172 @@
-<br><br><br>
-<section class="py-0">
-    <!-- <div class="bg-holder d-none d-md-block" style="background-image:url(/public/img/gallery/wetfu.jpg);background-position:right bottom;background-size:contain;">
-    </div> -->
-    
-    <!--/.bg-holder-->
 
-    <div class="top-left">
-    <h1 class="disthead">Palakkad</h1>
+    <section class="vh-100" style="background-color: rgb(255, 255, 255);">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-14 col-xl-13">
+    
+    
+                <!-- landing page -->
+                <section class="pt-2">
+                    <div class="hero-image" style="background-image: url('/assets/img/gallery/pal123.jpg')">;
+                        <div class="hero-text image-txt">
+                            <h3>Explore</h3>
+                            <h1 class="underline-red">Palakkad</h1>
+                        </div>
+                    </div>
+            
+            
+                </section>
+                </div>
+                </div>
+                </div>
+              </section>
+    
+                <!-- about US  -->
+            
+                <section class="container pt-2 col-md-8">
+            
+            
+                    <section class="pt-1  about-us  row">
+                        <div class="col col-12 col-lg-6 gallery">
+                            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let image of images" class="slide">
+                                    <img [src]='image' />
+                                </div>
+                            </ngx-slick-carousel> <!-- competitions-carousel : ends -->
+                        </div>
+                        <div class=" details  p-4   col-12 col-lg-6 ">
+                            <h2>About Palakkad</h2>
+                            <p>Palakkad is one of the fourteen districts of Kerala and has no coastal line. The district opens the state to the rest of the country through the Palakkad Gap with a width of 32 to 40 Kms. Its geographical position, historical background, educational status, tourism hot-spots and above all, the development activities that are carried out, are wide and varied. The district is one of the main granaries of Kerala and its economy is primarily agricultural.</p>
+                        </div>
+            
+            
+                    </section>
+                    <!-- about us ends -->
+    
+    
+    <div class="wrapper-grey padded">
+      <div class="container row">
+    
+    <!-- hovering cards starts-->
+    <div class="cardsp">
+      <h2 class="hdtxt text-center" >Top Destinations</h2>
+      <hr style="color: grey;">
+      <br><br><br><br>
+      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardspimg imgContainer'>
+                <img src='/assets/img/gallery/slntval12.jpg'>
+                <h2>Silent Valley Park</h2>
+            </div>
+            <div class="content">
+                <h2></h2>
+                <p>The Silent Valley National Park, with its lush green forests and beautiful views of the rich flora and fauna, is a popular destination for nature as well as wildlife lovers all across the globe. 
+                  Spread across an area of 89 square kilometres.
+                  </p>
+            </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='/assets/img/gallery/palfrt12.webp'>
+                <h2>Palakkad Fort</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>The Palakkad Fort in Kerala is a beautiful historical monument that has gently integrated its high walls with its surrounding green gardens.
+                   One of the most well-preserved forts in the state of Kerala, the Palakkad fort was built in the 1766 AD by Hyder Ali and is now a protected monument under the Archaeological Survey of India. </p>
+              </div>
+        </div>
+        <div class="card d-flex position-relative flex-column">
+          <div class='cardsp imgContainer'>
+              <img src='/assets/img/gallery/seethgnd12.jpg'>
+              <h2>Seethargundu View</h2>
+            </div>
+          <div class="content">
+              <h2></h2>
+              <p>Seethargundu Viewpoint is a famous point in the region. It is located on a cliff and offers a stunning view of the surroundings making it a perfect attraction for nature lovers and photographers.
+                 </p>
+            </div>
+      </div>
+        <div class="card d-flex position-relative flex-column">
+            <div class='cardsp imgContainer'>
+                <img src='https://images.thrillophilia.com/image/upload/s--32QMHeEU--/c_fill,g_center,h_450,q_auto,w_753/dpr_1.0,f_auto,fl_strip_profile/v1/images/photos/000/145/975/original/1550578738_bkg3.jpg.jpg'>
+                <h2>Parambikulam Wildlife Sanctuary</h2>
+              </div>
+            <div class="content">
+                <h2></h2>
+                <p>Spread over an area of nearly 400 square meters, the wildlife sanctuary is one of the most famous Palakkad tourist places for its Wild Tiger Reserve.
+
+                  Wildlife enthusiasts and thrill seekers will find it perfect to spend a day among the plethora of flora and fauna of the sanctuary along with the large population of royal Bengal tigers housed here.</p>
+              </div>
+        </div>
+        
+    </div>
+    </div>
+    <hr style="color: grey;">
+    <!-- hovering cards ends -->
+    
+    
+     <!-- hotels starts ----------->
+     <div style="  text-align: center;">
+      <h1 class=""><u>Hotels</u></h1>
+    </div>
+    <section class="container pt-2 container-c">
+      <div class="" >
+      </div>
+      <br>
+      <ng-container *ngFor="let hotel of hotels">
+        <ng-container class="" *ngIf="hotel.hotelAddress == 'Palakkad'">
+          <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+            style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+            <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+            <div class="card-description">
+              <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+              <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+              <p style="color: rgba(236, 215, 215, 0.727); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </section>
+  
+
+
+    <!-- hotels end ----------->
+    
+
+
+<!-- guides of alappuzha -->
+<br><br><br><br><br>
+<!-- guides of alappuzha end-->
+
+
+
 
     </div>
-    <img src="/assets/img/gallery/palakkad123.jpg" alt="">
+    </div>
+
+<!-- ---------------------- -->
+<!-- guides list -->
+      <!-- <div class="row">
+        <div *ngFor="let guide of guides">
+          <div>
+            <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    {{guide.first_name}}
+                    {{guide.last_name}}
+                  </h5>
+                  <p class="card-text">
+                    {{guide.email}} <br>
+                    {{guide.phone}} <br>
+                    {{guide.district}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div> -->
+<!-- guides list ends-->
