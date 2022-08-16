@@ -2,6 +2,8 @@
     <!-- ===============================================-->
     <!-- Login Form-->
     <!-- ===============================================-->
+
+
     <section class="vh-100" style="background-color: rgb(238, 238, 238);">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -18,12 +20,12 @@
       name="form"
       (ngSubmit)="f.form.valid && onSubmit()"
       #f="ngForm"
-      novalidate>
+      novalidate
+    >
       <div class="form-group">
         <label for="username">Username</label>
         <input
           type="text"
-          style="color: black;"
           class="form-control"
           name="username"
           [(ngModel)]="form.username"
@@ -42,7 +44,6 @@
         <label for="password">Password</label>
         <input
           type="password"
-          style="color: black;"
           class="form-control"
           name="password"
           [(ngModel)]="form.password"
@@ -77,13 +78,8 @@
       </div>
     </form>
 
-
-    <div class="alert alert-success" *ngIf="isLoggedIn" style="width: fit-content; margin: 100px;">
-      Logged in successfully as {{ currentUser.username }}
-
     <div class="alert alert-success" *ngIf="isLoggedIn">
-      Logged in as {{ roles }}.
-
+      Logged in successfully
     </div>
 
                   </div>
@@ -102,8 +98,5 @@
           </div>
         </div>
       </div>
-      </div>
     </section>
-
-
-
+<app-footer></app-footer>

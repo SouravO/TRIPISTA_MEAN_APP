@@ -17,17 +17,13 @@ export class LoginComponent implements OnInit {
   errorMessage = '';
   roles: string[] = [];
 
-  currentUser: any;
-
-  constructor(private authService: AuthService, private tokenStorage: TokenStorageService, private token: TokenStorageService) { }
+  constructor(private authService: AuthService, private tokenStorage: TokenStorageService) { }
 
   ngOnInit(): void {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
       this.roles = this.tokenStorage.getUser().roles;
     }
-  this.currentUser = this.token.getUser();
-
   }
 
   onSubmit(): void {
@@ -49,6 +45,7 @@ export class LoginComponent implements OnInit {
       }
     });
   }
+
 
   reloadPage(): void {
     window.location.reload();
