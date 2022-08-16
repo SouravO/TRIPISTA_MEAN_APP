@@ -162,6 +162,10 @@ color: white;
 .padded {
   padding: 100px 0;
 }
+.wrapper{
+  float: left;
+  
+}
 .wrapper-grey {
   background: #F4F4F4;
   
@@ -241,7 +245,7 @@ gallery */
   font-weight: lighter;
 }
 
-/* ____________________footer________________ */
+/* _______footer_____ */
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
@@ -338,7 +342,11 @@ gallery */
 /* my edits */
 
 
-
+.container-c{
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr  ;
+}
 .cardsp .hdtxt{
   font-weight: 600;
   font-size: 40px;
@@ -437,7 +445,3 @@ background: url('/assets/img/gallery/textimg.jpg') no-repeat;
 background-clip : text; 
 padding-bottom: 10px;
 }
-
-
-
-/* hotels */
