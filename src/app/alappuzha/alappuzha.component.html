@@ -1,5 +1,3 @@
-<br><br><br>
-
 
         <section class="vh-100" style="background-color: rgb(255, 255, 255);">
           <div class="container h-100">
@@ -100,83 +98,48 @@
                   <h2></h2>
                   <p>Pathiramanal is a small island inMuhamma panchayat of Alappuzha district. The name Pathiramanal means 'midnight sand'. The scenic beauty of both sides of the lake as well as that of the island is mind blowing. It is home to many rare varieties of migratory birds from different parts of the world.</p>
                 </div>
+              </div>
           </div>
-      </div>
-      
-      <!-- <hr style="color: grey;"> -->
-</div>
-</div>
-</div>
-
-      <!-- hovering cards ends -->
-      
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr style="color: grey;">
-      </section>
-
-      
-      
-      <!-- hotels starts ----------->
-      <section class="container container-c">      
-        <ng-container  *ngFor="let hotel of hotels">
-          <ng-container  class="" *ngIf="hotel.hotelAddress == 'Alappuzha'" >
-              <div class="card"
-                style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(https://31.media.tumblr.com/9e9ba532a3174811c79e07bc4a61ebdc/tumblr_n92w6iRSjY1r5gmiko1_500.jpg); width:100% ; height:40vh ;">
-                <div class="card-category">{{hotel.hotelName}}</div>
-                <div class="card-description">
-                  <h2>{{hotel.hotelAddress}}</h2>
-                  <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
-                  <p style="color: rgba(236, 215, 215, 0.727);">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
-                </div>
-              </div>
-            </ng-container>
-          </ng-container>
-    </section>
-    
-
-
-      <!-- hotels end ----------->
-      
-
-<!-- guides of alappuzha -->
-<!-- <br><br><br><br><br> -->
-<!-- guides of alappuzha end-->
-
-
-
-      
-
-<!-- ---------------------- -->
-<!-- guides list -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <div class="row"> -->
-  <!-- <hr style="color: grey;"> -->
-  <!-- <div *ngFor="let guide of guides">
-            <div>
-              <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      {{guide.first_name}}
-                      {{guide.last_name}}
-                    </h5>
-                    <p class="card-text">
-                      {{guide.email}} <br>
-                      {{guide.phone}} <br>
-                      {{guide.district}}
-                    </p>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <hr style="color: grey;">
+          <!-- hovering cards ends -->
+          
+          
+          
+          
+            <!-- hotels starts ----------->
+            <div style="  text-align: center;">
+              <h1 class=""><u>Hotels</u></h1>
             </div>
-          </div>
-       -->
-        <!-- </div> -->
-<!-- guides list ends-->
+            <section class="container pt-2 container-c">
+              <div class="" >
+              </div>
+              <br>
+              <ng-container *ngFor="let hotel of hotels">
+                <ng-container class="" *ngIf="hotel.hotelAddress == 'Alappuzha'">
+                  <div class="card" [style.background]="'url( '+ hotel.hotelImageUrl +' )'"
+                    style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)) ; width:100% ; height:40vh ;">
+                    <div style="color: white; font-weight:600" class="card-category">{{hotel.hotelName}}</div>
+                    <div class="card-description">
+                      <h2 style="color: white; font-weight:600">{{hotel.hotelAddress}}</h2>
+                      <h4 style="color: rgb(236, 215, 215);">₹{{hotel.hotelPrice}}</h4>
+                      <p style="color: rgba(236, 215, 215, 0.727); font-size: 20px;">{{hotel.hotelContact}}, <a>{{hotel.hotelWebsite}}</a></p>
+                    </div>
+                  </div>
+                </ng-container>
+              </ng-container>
+            </section>
+          
+      
+      
+            <!-- hotels end ----------->
+          
+      
+      <!-- guides of alappuzha -->
+      <br><br>
+      <!-- guides of alappuzha end-->
+      
 
 
+</div>
+</div>

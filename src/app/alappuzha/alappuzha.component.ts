@@ -44,7 +44,4 @@ export class AlappuzhaComponent implements OnInit {
     })
   }
 
-
-
-
 }

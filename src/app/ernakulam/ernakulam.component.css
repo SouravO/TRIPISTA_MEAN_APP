@@ -162,6 +162,10 @@ color: white;
 .padded {
   padding: 100px 0;
 }
+.wrapper{
+  float: left;
+  
+}
 .wrapper-grey {
   background: #F4F4F4;
   
@@ -190,7 +194,7 @@ gallery */
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   color: white;
-  position: relative;
+  position:relative;
   border-radius: 5px;
   margin-bottom: 20px;
 }
@@ -241,7 +245,7 @@ gallery */
   font-weight: lighter;
 }
 
-/* ____________________footer________________ */
+/* _______footer_____ */
 .footer-dark {
   padding:50px 0;
   color:#f0f9ff;
@@ -338,7 +342,11 @@ gallery */
 /* my edits */
 
 
-
+.container-c{
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr  ;
+}
 .cardsp .hdtxt{
   font-weight: 600;
   font-size: 40px;
