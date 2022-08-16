@@ -11,31 +11,44 @@
 		<li><a routerLink="districts">Districts</a></li>
     <li><a routerLink="hotels">Hotels</a></li>
     <li><a routerLink="guide">Guide</a></li>
-    <li><a routerLink="feedback">Feedback</a></li>
+    <!-- <li><a routerLink="feedback">Feedback</a></li> -->
     <li><a routerLink="help">Help</a></li>
     <li><a routerLink="addhotel" *ngIf="_auth.adminloggedIn()" (click)="loggedAdmin()">Add Hotel</a></li>
+    <ul class="links" *ngIf="isLoggedIn">
+      <li>
+        <a href="/feedback" routerLink="feedback">Feedback</a>
+      </li>
+      <li>
+        <a href="/profile" routerLink="profile"><img src="/assets/img/icons/profile.png" style="height: 25px;"></a>
+      </li>
+      <li>
+        <a href class="btn btn-lg btn-primary hover-top" (click)="logout()" style="background-color: rgba(255, 30, 0, 0.793); width: 100px">Log Out</a>
+      </li>
+    </ul>
+   <form class="ps-lg-5" *ngIf="!isLoggedIn">
+     <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
+   </form>
 
-
-      <ul class="" *ngIf="isLoggedIn">
+      <!-- <ul class="navbar-nav pt-2 ml-auto" *ngIf="isLoggedIn">
         <li class="nav-item">
-          <a href="/feedback" class="nav-link text-600" routerLink="feedback">Feedback</a>
+          <a href="/feedback" class="nav-link" routerLink="feedback">Feedback</a>
         </li>
         <li class="">
-          <a href="/profile" routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
+          <a href="/profile" class="nav-link"  routerLink="profile"><img src="/assets/img/icons/profile.webp" style="height: 50px; width: 50px;"></a>
         </li>
 
-      </ul>
-        <ul class="" *ngIf="isLoggedIn">
+      </ul> -->
+        <!-- <ul class="" *ngIf="isLoggedIn">
           <form class="links2">
             <a class="btn btn-lg btn-danger hover-top" (click)="logout()" role="button">Log Out</a>
           </form>
-        </ul>
+        </ul> -->
 
-      <ul>
+      <!-- <ul>
         <form class="links2" *ngIf="!isLoggedIn">
           <a class="btn btn-lg btn-primary hover-top" routerLink="login" role="button">Log In</a>
         </form>
-      </ul>
+      </ul> -->
 
       <ul>
         <form class="links22">
@@ -45,6 +58,8 @@
 
 
   </ul>
+
+
 
 
 	<label for="nav-toggle" class="icon-burger">

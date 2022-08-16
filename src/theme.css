@@ -9704,7 +9704,7 @@ fieldset:disabled .btn {
   border-radius: 50rem !important;
 }
 
-.rounded-top {
+/* .rounded-top {
   border-top-start-radius: 0.25rem !important;
   border-top-end-radius: 0.25rem !important;
 }
@@ -9762,7 +9762,7 @@ fieldset:disabled .btn {
 .rounded-start-0 {
   border-bottom-start-radius: 0 !important;
   border-top-start-radius: 0 !important;
-}
+} */
 
 .visible {
   visibility: visible !important;
@@ -18116,4 +18116,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 |   User Styles
 -----------------------------------------------*/
 
-/*# sourceMappingURL=theme.css.map */
+/* # sourceMappingURL=theme.css.map */
