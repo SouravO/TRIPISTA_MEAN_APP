@@ -28,11 +28,17 @@ import { UpdatehotelComponent } from './updatehotel/updatehotel.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WayanadComponent } from './wayanad/wayanad.component';
 import { GuideDetailsComponent } from './guide-details/guide-details.component';
+import { ModalComponent } from './modal/modal.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { CareersComponent } from './careers/careers.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
 {path:'admin',component:AdminComponent},
 {path:'districts',component:DistrictsComponent},
 {path:'login',component:LoginComponent},
+{path: 'careers', component:CareersComponent},
+{path: 'privacy', component:PrivacyComponent},
+{path: 'modal', component:ModalComponent},
 {path:'help',component:HelpComponent},
 {path:'register',component:RegisterComponent},
 {path:'hotels',component:HotelsComponent},
