@@ -147,28 +147,39 @@
     </div>
     </div>
 
-<!-- ---------------------- -->
-<!-- guides list -->
-      <!-- <div class="row">
-        <div *ngFor="let guide of guides">
-          <div>
-            <div class="col-sm-2" *ngIf="guide.district == 'Alappuzha'">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    {{guide.first_name}}
-                    {{guide.last_name}}
-                  </h5>
-                  <p class="card-text">
-                    {{guide.email}} <br>
-                    {{guide.phone}} <br>
-                    {{guide.district}}
-                  </p>
-                </div>
-              </div>
-            </div>
+    <br><br>
+    <!-- Guides of tripsita starts -->
+
+<div class="container">
+<div class="row justify-content-center">
+  <div class="col-12 col-sm-8 col-lg-6">
+  <!-- <div class="col-4"> -->
+    <!-- Section Heading-->
+    <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+      <h3>Guides <span> of Tripista</span></h3>
+      <p></p><br><br>
+      <div class="line"></div>
+    </div>
+  </div>
+</div>
+<div class="row guide-grid">
+  <!-- Single Advisor-->
+  <ng-container class="guide-container"  *ngFor="let guide of guides">
+    <ng-container *ngIf="guide.district == 'Kottayam'">
+      <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+      <!-- Team Thumb-->
+        <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt=""> 
+      <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6><strong>{{guide.first_name}} {{guide.last_name}}</strong></h6>
+            <p class="designation">{{guide.dob}}</p>
+            <p class="designation">{{guide.district}}</p>
+            <p class="designation">{{guide.gender}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
           </div>
         </div>
-    
-      </div> -->
-<!-- guides list ends-->
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
+
+<!-- Guides of tripsita starts ends -->
