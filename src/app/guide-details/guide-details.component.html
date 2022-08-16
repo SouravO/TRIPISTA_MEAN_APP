@@ -55,10 +55,11 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row guide-grid">
     <!-- Single Advisor-->
-    <div *ngFor="let guide of guides">
-    <div class="col-12 col-sm-6 col-lg-3">
+    <ng-container class="guide-container"  *ngFor="let guide of guides">
+      <ng-container *ngIf="guide.district == 'Alappuzha'">
+    <!-- <div class="col-12 col-sm-6 col-lg-3"> -->
       <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
         <!-- Team Thumb-->
         <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
@@ -75,8 +76,9 @@
       </div>
     </div>
 
-  </div>
-  </div>
+  <!-- </div> -->
+</ng-container>
+</ng-container>
 </div>
 
 <!-- Guides of tripsita starts ends -->

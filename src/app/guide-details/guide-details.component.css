@@ -129,3 +129,15 @@
 .single_advisor_profile:focus .single_advisor_details_info p {
     color: #ffffff;
 }
+.guide-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.advisor_thumb{
+    width: fit-content;
+}
+
+.guide-container{
+    width: 100%;
+}
