@@ -1,5 +1,5 @@
 /* Help  */
-.header{
+/* .header{
   border-radius: 20px 20px 0px 0px;
   padding: 10px 0px;
   background: rgb(0, 77, 128);
@@ -33,4 +33,45 @@
 }
 hr{
   background-color: #9b9b9b;
+} */
+
+/* ------------------------------------ */
+
+
+
+details {
+  border: 1px solid #d4d4d4;    
+  padding: .75em .75em 0;
+margin-top: 10px;
+box-shadow:0 0 20px #d4d4d4;
+}
+
+summary {	
+  font-weight: bold;
+  margin: -.75em -.75em 0;
+  padding: .75em;
+  background-color: rgb(13, 94, 165);
+  color: #fff;
+  font-size: 25px;
+}
+
+details[open] {
+  padding: .75em;
+border-bottom: 1px solid aliceblue;
+}
+
+details[open] summary {
+  border-bottom: 1px solid rgb(255, 240, 244);
+  margin-bottom: 10px;
+}
+
+.header{
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 0px;
+  background: rgb(0, 77, 128);
+  color: #fff;
+  width: 100%;
+  /* display: flex; */
+  align-content: center;
+  justify-content: center;
 }
